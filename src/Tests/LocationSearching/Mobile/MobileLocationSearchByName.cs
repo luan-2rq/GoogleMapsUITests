@@ -1,5 +1,4 @@
 using GoogleMapsUITests.Data;
-using GoogleMapsUITests.Enums;
 using GoogleMapsUITests.Fixtures;
 using GoogleMapsUITests.Pages;
 

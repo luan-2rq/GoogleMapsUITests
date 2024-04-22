@@ -9,6 +9,12 @@ public static class DeviceData {
         yield return new Device { name="Desktop Chrome", browser = Browser.Chromium, channel="chromium" };
         yield return new Device { name ="Desktop Firefox", browser = Browser.Firefox, channel="firefox" };
     }
+
+    public static IEnumerable<Device> SupportedMobileDevices() {
+
+        yield return new Device { name="Pixel 7", browser = Browser.Chromium, channel="" };
+        yield return new Device { name ="iPhone 12", browser = Browser.WebKit, channel="" };
+    }
 }
 
 public struct Device {
