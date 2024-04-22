@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RunSettings>
+  <NUnit>
+    <NumberOfTestWorkers>24</NumberOfTestWorkers>
+  </NUnit>
+  <TestRunParameters>
+    <Parameter name="MainUrl" value="https://www.google.com/maps" />
+  </TestRunParameters>
+  <!-- Playwright -->  
+  <Playwright>
+    <BrowserName>chromium</BrowserName>
+    <ExpectTimeout>5000</ExpectTimeout>
+    <LaunchOptions>
+    </LaunchOptions>
+  </Playwright>
+</RunSettings>
