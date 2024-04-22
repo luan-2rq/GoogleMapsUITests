@@ -68,6 +68,14 @@ public static class SearchLocationData {
         yield return new Location { name = "25°11.817'N 55°16.450'E", outputName = "Burj Khalifa - 1 Sheikh Mohammed bin Rashid Blvd - Downtown Dubai - Dubai - Emirados Árabes Unidos" };
         yield return new Location { name = "48°51.500'N 2°17.067'E", outputName = "Rue Raynouard 1-3, 75016 Paris, França" };
     }
+
+    public static IEnumerable<Location> InvalidLocationCoordinates() {
+        
+        yield return new Location { name = "24°25'56\"S 181°28'07\"W", outputName = ""};
+        yield return new Location { name = "91°25'56\"S 41°28'07\"W", outputName = "" };
+        yield return new Location { name = "121°25'56\"S 17°28'07\"W", outputName = "" };
+        yield return new Location { name = "87°25'56\"S 190°28'07\"W", outputName = "" };
+    }
 }
 
 public struct Location {
