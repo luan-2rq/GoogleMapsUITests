@@ -29,4 +29,16 @@ public class LocationSeachByName : PageTest
 
         Assert.IsTrue(await searchPage.isSearchAddressResultAsExpected(location.outputName), $"The street '{location.name}' should be displayed as '{location.outputName}', but it may either have appeared incorrectly or not at all.");
     }
+
+    [Test]
+    [TestCaseSource(typeof(SearchLocationData), nameof(SearchLocationData.InvalidLocationNames))]
+    public async Task SearchLocationByNameInvalidLocation(Location location)
+    {
+        var searchPage = new SearchPage(Page);
+
+        await searchPage.OpenPage();
+        await searchPage.SearchLocation(location.name);
+
+        Assert.IsTrue(await searchPage.isSearchLocationNotFound(location.outputName), $"The no location found message should appear for location '{location.name}', but it did not appear.");
+    }
 }

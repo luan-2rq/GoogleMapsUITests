@@ -10,6 +10,7 @@ public class SearchPage
     private ILocator _searchTitleResultTxt(string expectedResult) => _page.Locator($"div.tAiQdd > div.lMbq3e h1.DUwDvf.lfPIob:has-text('{expectedResult}')");
     private ILocator _searchSubtitleResultTxt(string expectedResult) => _page.Locator($"div.tAiQdd > div.lMbq3e > h2.bwoZTb:has-text('{expectedResult}')");
     private ILocator _searchAddressResultTxt(string expectedResult) => _page.Locator($"div.LCF4w > span.JpCtJf > span.DkEaL:has-text('{expectedResult}')");
+    private ILocator _notFoundTxt => _page.Locator("div.m6QErb.WNBkOb div.Q2vNVc > i");
 
     public async Task SearchLocation(string location)
     {
@@ -41,6 +42,18 @@ public class SearchPage
         try
         {
             await _searchAddressResultTxt(expectedResult).WaitForAsync();
+            return true;
+        }catch (TimeoutException){
+
+            return false;
+        }
+    }
+
+    public async Task<bool> isSearchLocationNotFound(string expectedResult)
+    {
+        try
+        {
+            await _notFoundTxt.WaitForAsync();
             return true;
         }catch (TimeoutException){
 
