@@ -3,6 +3,7 @@ using GoogleMapsUITests.Pages;
 
 namespace GoogleMapsUITests.Tests.LocationSearching;
 
+[Parallelizable(ParallelScope.Fixtures)]
 public class LocationSeachByName : PageTest
 {
     [Test]
