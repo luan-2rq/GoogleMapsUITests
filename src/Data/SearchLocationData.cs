@@ -44,26 +44,26 @@ public static class SearchLocationData {
 
     public static IEnumerable<Location> ValidLocationDDCoordinates() {
         
-        yield return new Location { name = "23.4322° S, 46.4686° W", expectedResult = "Aeroporto, Guarulhos - SP"};
-        yield return new Location { name = "29.9744° N, 31.1264° E", expectedResult = "Al Omraneya, Al Haram, Guizé 3512201, Egito" };
-        yield return new Location { name = "25.1969° N, 55.2742° E", expectedResult = "Burj Khalifa - 1 Sheikh Mohammed bin Rashid Blvd - Downtown Dubai - Dubai - Emirados Árabes Unidos" };
-        yield return new Location { name = "48.85833° N, 2.28444° E", expectedResult = "Rue Raynouard 1-3, 75016 Paris, França" };
+        yield return new Location { name = "23.4322° S, 46.4686° W", expectedResult = "Aeroporto, Guarulhos"};
+        yield return new Location { name = "29.9744° N, 31.1264° E", expectedResult = "Al Omraneya, Al Haram" };
+        yield return new Location { name = "25.1969° N, 55.2742° E", expectedResult = "Burj Khalifa - 1 Sheikh Mohammed bin Rashid Blvd" };
+        yield return new Location { name = "48.85833° N, 2.28444° E", expectedResult = "Rue Raynouard 1-3" };
     }
 
     public static IEnumerable<Location> ValidLocationDMSCoordinates() {
         
-        yield return new Location { name = "23°25'56\"S 46°28'07\"W", expectedResult = "Aeroporto, Guarulhos - SP"};
-        yield return new Location { name = "29°58'28\"N 31°07'35\"E", expectedResult = "Al Omraneya, Al Haram, Guizé 3512201, Egito" };
-        yield return new Location { name = "25°11'49\"N 55°16'27\"E", expectedResult = "Burj Khalifa - 1 Sheikh Mohammed bin Rashid Blvd - Downtown Dubai - Dubai - Emirados Árabes Unidos" };
-        yield return new Location { name = "48°51'30\"N 2°17'4\"E", expectedResult = "Rue Raynouard 1-3, 75016 Paris, França" };
+        yield return new Location { name = "23°25'56\"S 46°28'07\"W", expectedResult = "Aeroporto, Guarulhos"};
+        yield return new Location { name = "29°58'28\"N 31°07'35\"E", expectedResult = "Al Omraneya, Al Haram" };
+        yield return new Location { name = "25°11'49\"N 55°16'27\"E", expectedResult = "Burj Khalifa - 1 Sheikh Mohammed bin Rashid Blvd" };
+        yield return new Location { name = "48°51'30\"N 2°17'4\"E", expectedResult = "Rue Raynouard 1-3" };
     }
 
     public static IEnumerable<Location> ValidLocationDMMCoordinates() {
         
-        yield return new Location { name = "23°25.933'S 46°28.117'W", expectedResult = "Aeroporto, Guarulhos - SP"};
-        yield return new Location { name = "29°58.467'N 31°07.583'E", expectedResult = "Al Omraneya, Al Haram, Guizé 3512201, Egito" };
-        yield return new Location { name = "25°11.817'N 55°16.450'E", expectedResult = "Burj Khalifa - 1 Sheikh Mohammed bin Rashid Blvd - Downtown Dubai - Dubai - Emirados Árabes Unidos" };
-        yield return new Location { name = "48°51.500'N 2°17.067'E", expectedResult = "Rue Raynouard 1-3, 75016 Paris, França" };
+        yield return new Location { name = "23°25.933'S 46°28.117'W", expectedResult = "Aeroporto, Guarulhos"};
+        yield return new Location { name = "29°58.467'N 31°07.583'E", expectedResult = "Al Omraneya, Al Haram" };
+        yield return new Location { name = "25°11.817'N 55°16.450'E", expectedResult = "Burj Khalifa - 1 Sheikh Mohammed bin Rashid Blvd" };
+        yield return new Location { name = "48°51.500'N 2°17.067'E", expectedResult = "Rue Raynouard 1-3" };
     }
 
     public static IEnumerable<Location> InvalidLocationCoordinates() {
