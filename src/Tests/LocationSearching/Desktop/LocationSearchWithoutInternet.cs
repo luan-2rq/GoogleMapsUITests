@@ -1,5 +1,6 @@
 using GoogleMapsUITests.Data;
 using GoogleMapsUITests.Enums;
+using GoogleMapsUITests.Fixtures;
 using GoogleMapsUITests.Pages;
 
 namespace GoogleMapsUITests.Tests.LocationSearching;
@@ -17,9 +18,11 @@ public class LocationSearchWithoutInternet : PageTest
 
         await searchPage.OpenPage();
 
+        await searchPage.SearchLocation(location.name);
+
         await Page.Context.SetOfflineAsync(true);
 
-        await searchPage.SearchLocation(location.name);
+        await searchPage.ClickOnSearchBtn();
 
         Assert.IsTrue(await searchPage.isInternetConnectionIssueDisplayed(), $"The connectivity issue should be displayed when trying to search without internet, but it did not appear.");
     }

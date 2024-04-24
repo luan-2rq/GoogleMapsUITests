@@ -76,4 +76,6 @@ public class SearchPage
             return false;
         }
     }
+
+    public async Task ClickOnSearchBtn() => await _searchBtn.ClickAsync();
 }
