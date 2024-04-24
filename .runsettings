@@ -5,6 +5,7 @@
   </NUnit>
   <TestRunParameters>
     <Parameter name="MainUrl" value="https://www.google.com/maps" />
+    <Parameter name="TakeScreenshotOnTestCompletion" value="true" />
   </TestRunParameters>
   <!-- Playwright -->  
   <Playwright>

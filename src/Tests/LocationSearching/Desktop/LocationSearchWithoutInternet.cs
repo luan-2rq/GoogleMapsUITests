@@ -7,7 +7,7 @@ namespace GoogleMapsUITests.Tests.LocationSearching;
 
 [TestFixture]
 [Parallelizable(ParallelScope.Fixtures)]
-public class LocationSearchWithoutInternet : PageTest
+public class LocationSearchWithoutInternet : BaseTest
 {
 
     [Test]

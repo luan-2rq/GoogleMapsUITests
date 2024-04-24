@@ -1,5 +1,5 @@
 using GoogleMapsUITests.Data;
-using GoogleMapsUITests.Enums;
+using GoogleMapsUITests.Helpers;
 using Microsoft.Playwright.TestAdapter;
 
 namespace GoogleMapsUITests.Fixtures;
@@ -42,13 +42,15 @@ public class CompatibilityTest : PlaywrightTest
     [TearDown]
     public async Task BrowserTearDown()
     {
+        await ScreenshotHelper.CaptureScreenshotOnFailure(Page, TestContext.CurrentContext);
+
         await Context.CloseAsync();
         if (Browser != null)
             await Browser.CloseAsync();
     }
 
-    public async Task<IBrowser> CreateBrowser(IBrowserType browserType, String channel) {
-        var launchOptions = PlaywrightSettingsProvider.LaunchOptions;
+    public async Task<IBrowser> CreateBrowser(IBrowserType browserType, string channel) {
+        var launchOptions = new BrowserTypeLaunchOptions(PlaywrightSettingsProvider.LaunchOptions);
         launchOptions.Channel = channel;
         return await browserType.LaunchAsync(launchOptions);
     }

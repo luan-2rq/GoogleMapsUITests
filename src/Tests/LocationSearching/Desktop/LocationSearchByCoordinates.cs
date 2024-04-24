@@ -1,4 +1,5 @@
 using GoogleMapsUITests.Data;
+using GoogleMapsUITests.Fixtures;
 using GoogleMapsUITests.Pages;
 
 namespace GoogleMapsUITests.Tests.LocationSearching;
@@ -6,7 +7,7 @@ namespace GoogleMapsUITests.Tests.LocationSearching;
 
 [TestFixture]
 [Parallelizable(ParallelScope.Fixtures)]
-public class LocationSearchByCoordinates : PageTest
+public class LocationSearchByCoordinates : BaseTest
 {
 
     [Test]
