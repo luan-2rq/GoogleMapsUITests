@@ -1,6 +1,10 @@
 using GoogleMapsUITests.Enums;
 
 namespace GoogleMapsUITests.Data;
+
+/// <summary>
+/// The DeviceData class contains methods for returning supported devices for running compatibility tests.
+/// </summary>
 public static class DeviceData {
 
     public static IEnumerable<Device> SupportedBrowsers() {

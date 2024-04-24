@@ -1,4 +1,9 @@
 namespace GoogleMapsUITests.Pages;
+
+/// <summary>
+/// The MobileSearchPage class represents the mobile version of the Google Maps search page.
+/// It contains the locators for the page elements and methods for interacting with them.
+/// </summary>
 public class MobileSearchPage
 {
     private IPage _page;
