@@ -25,13 +25,13 @@ To start running tests locally, follow these steps:
 
 - Run tests: In the project folder, execute 'dotnet test -s .runsettings' 
 
-<img src="https://github.com/luan-2rq/GoogleMapsUITests/images/test_execution.png" width="720" height="470" />
+<img src="https://github.com/luan-2rq/GoogleMapsUITests/images](https://github.com/luan-2rq/GoogleMapsUITests/blob/main/images/test_execution.png" width="720" height="470" />
 
 ### Test Execution Deliverables [Screenshots]:
 
 The project is organized in a way, that upon test execution every test case generates a screenshot of the test ending. After executing a test suite, the screenshots are saved at 'bin/Debug/net7.0/screenshots/' in a 'Pass' or 'Failure' directory depending on the test result. In the future these screenshots can be configured as artifacts of CI execution.
 
-<img src="https://github.com/luan-2rq/GoogleMapsUITests/images/screenshots_folders.png" width="720" height="268" />
+<img src="https://github.com/luan-2rq/GoogleMapsUITests/blob/main/images/screenshots_folders.png" width="720" height="268" />
 
 > **Note:** You can configure whether screenshots are saved for every test completion or only for failed tests. In the .runsettings file, setting the parameter TakeScreenshotOnTestCompletion to true will generate screenshots for every test case execution, regardless of whether it passed or failed. On the flip side, setting it to false will only capture screenshots for tests that have failed.
 
@@ -44,7 +44,7 @@ The test strategy encompasses both functional and compatibility testing. Given t
 
 ### Functional Testing
 
-<img src="https://github.com/luan-2rq/GoogleMapsUITests/images/test_desktop.gif" width="720" height="400" />
+<img src="https://github.com/luan-2rq/GoogleMapsUITests/blob/main/images/test_desktop.gif" width="720" height="400" />
 
 The tests cover various scenarios including searching locations by name, coordinates, and handling invalid inputs. The functional testing includes the following test cases:
 
@@ -65,7 +65,7 @@ These test cases are executed utilizing the NUnit `TestCaseSource` attribute, wh
 
 ### Compatibility Testing
 
-<img src="https://github.com/luan-2rq/GoogleMapsUITests/images/test_mobile.gif" width="400" height="720" />
+<img src="https://github.com/luan-2rq/GoogleMapsUITests/blob/main/images/test_mobile.gif" width="400" height="720" />
 
 Additionally, compatibility tests are conducted across various browsers and mobile devices to guarantee compatibility across different platforms. These tests utilize the same suite of test cases already defined for functional testing. To ensure efficient testing execution, only the "Search Location by Name" test cases have been configured to run in every test cycle, as this functionality serves as the primary feature for most users.
 
