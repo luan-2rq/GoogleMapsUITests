@@ -40,6 +40,8 @@ The test strategy encompasses both functional and compatibility testing. Given t
 
 > **Note:** If the localization files of Google Maps were available, the best approach would be to use text-based locators. 
 
+A detailed **test case documentation** can be found [here](https://docs.google.com/document/d/1t1CtgRDmnUr6_8r55NW1B9aLyHEeFxFhCeBMC7Qpnbg/edit?usp=sharing).
+
 ### Functional Testing
 
 <img src="https://github.com/luan-2rq/GoogleMapsUITests/blob/main/images/test_desktop.gif" width="720" height="400" />
