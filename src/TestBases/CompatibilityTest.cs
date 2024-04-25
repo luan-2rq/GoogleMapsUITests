@@ -6,7 +6,7 @@ namespace GoogleMapsUITests.Fixtures;
 
 /// <summary>
 /// The CompatibilityTest class extends the PlaywrightTest class and is used as a base class for running compatibility tests on different devices.
-/// It is passed a device in the constructor which is used to configure the viewport.
+/// It is passed a device in the constructor which is used to configure the browser accordingly.
 /// The class contains methods for setting up and tearing down the tests, as well as capturing screenshots on test failure.
 /// </summary>
 public class CompatibilityTest : PlaywrightTest

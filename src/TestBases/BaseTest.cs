@@ -3,7 +3,9 @@ using NUnit.Framework.Interfaces;
 
 namespace GoogleMapsUITests.Fixtures;
 
-
+/// <summary>
+/// Base test class that contains the TearDown method to capture a screenshot on test failure.
+/// </summary>
 public class BaseTest : PageTest
 {
 

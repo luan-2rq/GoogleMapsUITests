@@ -1,5 +1,8 @@
 namespace GoogleMapsUITests.Data;
 
+/// <summary>
+/// Data for testing location searching.
+/// </summary>
 public static class SearchLocationData {
 
     public static IEnumerable<Location> ValidCountryLocationNames() {

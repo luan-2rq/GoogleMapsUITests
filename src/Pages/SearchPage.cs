@@ -1,4 +1,8 @@
 namespace GoogleMapsUITests.Pages;
+
+/// <summary>
+/// The SearchPage class contains locators and methods for interacting with the desktop version of the Google Maps search page.
+/// </summary>
 public class SearchPage
 {
     private IPage _page;
