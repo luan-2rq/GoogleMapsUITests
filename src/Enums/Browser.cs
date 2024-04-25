@@ -8,11 +8,3 @@ public enum Browser
     Firefox,
     WebKit
 }
-
-public class SupportedBrowsers : IEnumerable
-{
-    public IEnumerator GetEnumerator()
-    {
-        return ((IEnumerable<Browser>)Enum.GetValues(typeof(Browser))).GetEnumerator();
-    }
-}
