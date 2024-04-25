@@ -44,7 +44,7 @@ The test strategy encompasses both functional and compatibility testing. Given t
 
 <img src="https://github.com/luan-2rq/GoogleMapsUITests/blob/main/images/test_desktop.gif" width="720" height="400" />
 
-The tests cover various scenarios including searching locations by name, coordinates, and handling invalid inputs. The functional testing includes the following test cases:
+The tests cover the search of over four distinct addresses. Moreover, they incorporate diverse scenarios, such as searching for locations by name or coordinates, as well as handling invalid inputs. The functional testing comprises the following test cases:
 
 - **Search Location by Name:**
     - Search location by country name
