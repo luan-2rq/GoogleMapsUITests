@@ -97,4 +97,4 @@ The project is organized in folders as follows:
 
 ## CI(Github Actions)
 
-The project uses GitHub Actions for Continuous Integration (CI). This allows for ensuring that tests are working as expected whenever a change is made. The configuration for GitHub Actions is found in the `.github/workflows` directory of the project. The CI pipeline includes steps for setting up the environment, installing dependencies, and running the tests. This ensures that the test suite is always in a functional and stable state.
+The project uses GitHub Actions for Continuous Integration (CI). This allows for ensuring that tests are working as expected whenever a change is made. The configuration for GitHub Actions is found in the `.github/workflows` directory of the project. The CI pipeline includes steps for setting up the environment, installing dependencies, and running the tests.
