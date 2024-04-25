@@ -25,7 +25,7 @@ To start running tests locally, follow these steps:
 
 - Run tests: In the project folder, execute 'dotnet test -s .runsettings' 
 
-<img src="https://github.com/luan-2rq/GoogleMapsUITests/images](https://github.com/luan-2rq/GoogleMapsUITests/blob/main/images/test_execution.png" width="720" height="470" />
+<img src="https://github.com/luan-2rq/GoogleMapsUITests/blob/main/images/test_execution.png" width="720" height="470" />
 
 ### Test Execution Deliverables [Screenshots]:
 
