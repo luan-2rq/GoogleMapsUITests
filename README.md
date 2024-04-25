@@ -1,5 +1,3 @@
-# GoogleMapsUITests
-
 # Google Maps End-to-End Testing with Playwright (NUnit)
 
 This is an E2E testing automation project for Google Maps using the Playwright framework with NUnit. It focuses on testing location search functionalities.
